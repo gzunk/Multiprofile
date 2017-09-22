@@ -17,7 +17,7 @@ public class Multiproject {
     public String configurationFred;
 
     @Resource(name="configurationName")
-    String configurationName;
+    private String configurationName;
 
     @Bean( name= "mainBean" )
     String mainBean() {
