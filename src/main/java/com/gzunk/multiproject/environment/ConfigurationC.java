@@ -13,6 +13,7 @@ public class ConfigurationC {
 
     private static final Logger LOG = LoggerFactory.getLogger(ConfigurationC.class);
 
+    // Automatically populated from property file
     @Value("${configuration.name}")
     String configurationName;
 

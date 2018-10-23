@@ -19,11 +19,24 @@ public class Multiproject {
     @Resource(name="configurationName")
     private String configurationName;
 
+    @Resource(name="configurationName.1")
+    private String configurationName1;
+
+
     @Bean( name= "mainBean" )
     String mainBean() {
         LOG.info("Creating mainBean");
         LOG.info(configurationName);
         LOG.info(configurationFred);
+        return configurationName;
+    }
+
+    @Bean( name= "otherBean" )
+    String otherBean() {
+        LOG.info("Creating mainBean");
+        LOG.info(configurationName);
+        LOG.info(configurationFred);
+        LOG.info(configurationName1);
         return configurationName;
     }
 
